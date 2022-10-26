@@ -1,11 +1,23 @@
-
 spring:
   datasource:
-    password: letmein
+#    driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/serverdb
     username: root
+    password: Docteur12@
   jpa:
-    hibernate:
-      dialect: org.hibernate.dialect.MySQLBDialect
-      format_sql: true
+    hibernate.ddl-auto: create-drop
+#    hibernate.ddl-auto: update
+    generate-ddl: true
     show-sql: true
+
+
+#spring:
+#  datasource:
+#    password: Docteur12@
+#    url: jdbc:mysql://localhost:3306/serverdb
+#    username: root
+#  jpa:
+#    hibernate:
+#      dialect: org.hibernate.dialect.MySQLBDialect
+#      format_sql: true
+#    show-sql: true
